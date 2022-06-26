@@ -175,21 +175,17 @@ a{
   position: relative;
 }
 .carousel__title{
-  position: absolute;
-  top: 50px;
-  left: 50px; 
+  padding: 50px 0 0 50px;
   font-family: var(--MB);
   font-size: 35px;
   line-height: 43px;
-  width: 376px;
+  width: 426px;
   color: var(--white);
   margin-bottom: 20px;
 }
 .carousel__subtitle{
-  position: absolute;
-  top: 156px;
-  left: 50px;
-  width: 328px;
+  padding-left: 50px;
+  width: 378px;
   font-family: var(--MR);
   font-size: 16px;
   line-height: 20px;
@@ -225,6 +221,7 @@ a{
   height: 300px;
 }
 .arrow-left{
+  border-radius: 5px;
   position: absolute;
   bottom: 0;
   right: 50px;
@@ -235,6 +232,7 @@ a{
   cursor: pointer;
 }
 .arrow-right{
+  border-radius: 5px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -622,7 +620,7 @@ footer{
   display: flex;
   align-items: center;
   background: var(--darkblue);
-  padding: 14px 147px 13px 20px;
+  padding: 14px 165px 13px 20px;
 }
 .menu__inner p{
   font-family: var(--MR);
@@ -647,10 +645,11 @@ footer{
 .search i{
   color: var(--white);
   position: absolute;
-  right: 45%;
-  top: 35%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.search i:hover{
+.search:hover i{
   color: var(--darkblue);
 }
 .shopping-cart{
@@ -658,10 +657,17 @@ footer{
   background: var(--dBlue);
   color: var(--white);
   padding: 16px 104px 13px 95px;
+  position: relative;
+}
+.shopping-cart i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .shopping-cart:hover{
   background: var(--light-greyish);
 }
-.shopping-cart i:hover{
+.shopping-cart:hover i{
   color: var(--darkblue);
 }
